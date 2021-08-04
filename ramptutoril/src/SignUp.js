@@ -5,7 +5,7 @@ import app from "./base";
 const SignUp = ({ history }) => {
   const handleSignUp = useCallback(
     async (event) => {
-      event.prevevntDefault();
+      event.preventDefault();
       const { email, password } = event.target.elements;
       try {
         await app
